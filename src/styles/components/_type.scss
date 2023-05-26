@@ -1,10 +1,190 @@
 body {
-  font-family: sans-serif;
+  font-family: "articule-cf", sans-serif;
   font-size: $size-text;
   line-height: 1.5;
-  color: $c-text;
+  color: $c-black;
+  background: $c-bg;
+  width: 100%;
+  margin: 0;
+
+
+button{
+  background-color:$c-rose ;
+  border: solid 1px $c-black;
+  color: $c-black;
+  text-transform: uppercase;
+  padding: 2px 5px 2px 5px;
+  font-size: 12pt;
+  font-weight: 300;
 }
 
-.title {
-  color: $c-alt;
+.nav__second{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0;
+ padding: 0;
+justify-content: space-between;
+.seconde--el{
+
+  background:$c-bg ;
+  font-size: 12pt;
+  border: solid 1px $c-black;
+  padding: 2px 5px 2px 5px;
+}
+}
+
+ul{
+  list-style: none;
+}
+.next{
+  background-color:$c-rose ;
+  border: solid 1px $c-black;
+  color: $c-black;
+  text-transform: uppercase;
+  padding: 2px 5px 2px 5px;
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+a{
+  text-decoration: none;
+  color: $c-black;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-style: normal;
+}
+h2{
+  font-size: 24pt;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.menu__list{
+  padding: 0;
+  border: solid 1px $c-black;
+  text-align: center;
+  width: 280px;
+  background-color: $c-bg;
+  .cross{
+    margin-top: 22px;
+    margin-left: 70%;
+  }
+.menu__el{
+padding: 15px 0;
+}
+}
+
+.citation{
+  font-family: articulat-cf, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sous-titre{
+  font-size: 16pt;
+  text-transform: uppercase;
+}
+
+.text--bold{
+  font-weight: 700;
+}
+.para--high{
+  font-size: 16pt;
+}
+
+.text--center{
+  text-align: center;
+}
+
+.lien{
+  text-decoration: none;
+  color: #110B0B;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.lien::before{
+  content: '';
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: $c-rose;
+  z-index: -2;
+  transition: .2s all;
+}
+.lien:hover::before{
+  width: 100%;
+  height: 100%;
+}
+
+.para--Light {
+  font-weight: 300;
+}
+
+.para--medium {
+  font-weight: 600;
+}
+
+
+.gris{
+  background-color: #D9D9D9;
+  border: #110B0B solid 1px;
+  padding: 5px;
+  text-align: center;
+
+}
+
+.section--VoirPlus{
+  background-color: $c-blue;
+  border: $c-black 1px solid;
+  border-bottom: none;
+  margin: 0;
+}
+
+.fleche{
+  rotate: 90deg;
+}
+
+
+.section--Valeur{
+
+  background-color: $c-blue;
+  border: $c-black 1px solid;
+  border-top: none;
+  margin: 0;
+.valeurs{
+  border: dashed 1px $c-black;
+  background-color: $c-blue;
+  border-width: 2px;
+  margin: 0 0px 25px 0px;
+  text-align: center;
+  box-shadow: 5px 6px 0px 0px $c-black;
+
+  .valTitre{
+      font-size: 24pt ;
+      text-transform: uppercase;
+      border-bottom: dashed 1px $c-black;
+      border-width: 2px;
+      margin: 0;
+    }
+
+  
+}
+}
+
+footer{
+  background-color: $c-blue;
+  border: $c-black 1px solid;
+}
 }

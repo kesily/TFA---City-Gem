@@ -1,2 +1,102 @@
 @import 'utils/variables';
 @import 'components/type';
+
+
+header{
+  height: 50px; 
+
+
+.menu__burger{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+}
+.menu__list{
+position: fixed;
+right: -300px;
+top: 80px;
+opacity: 0;
+transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
+z-index: 9;
+}
+.menu--open{
+    opacity: 1;
+    right: 30px;
+    
+}
+
+}
+.section--Home {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.section--VoirPlus{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 30px;
+    padding-right: 30px;
+    column-gap: 10px;
+}
+
+.section--VoirPlus *:nth-child(1){
+    grid-column: 3 / span 2 ;
+}
+.section--VoirPlus *:nth-child(2){
+    grid-column: 1 / span 6 ;
+    margin-top: 100px;
+
+}
+.section--VoirPlus *:nth-child(3){
+    grid-column: 1 / span 6 ;
+}
+.section--VoirPlus *:nth-child(4){
+    grid-column: 2 ;
+}
+.section--VoirPlus *:nth-child(5){
+    grid-column: 3 / span 3 ;
+}
+.section--VoirPlus *:nth-child(6){
+    grid-column: 1 / span 6 ;
+}
+.section--VoirPlus *:nth-child(7){
+    grid-column: 4/ span 3 ;
+    grid-row: span 3;
+}
+.section--VoirPlus *:nth-child(8){
+    grid-column: 2 ;
+  
+}
+.section--VoirPlus *:nth-child(9){
+    grid-column: 1 / span 3 ;
+}
+.section--VoirPlus *:nth-child(10){
+    grid-column: 1 / span 6 ;
+    margin: 10px 0;
+}
+
+
+.section--Valeur{
+    padding: 0 30px;
+}
+.section--Navfin{
+   padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+footer{
+    margin: 0;
+    .containerFooter__menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+}
