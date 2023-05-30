@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1025px) and (max-width: 1440px){
     body{
         header{
-
+            border: solid 1px $c-black;
             .menu__burger{
                 display: none;
             }
@@ -12,7 +12,7 @@
                 top: 0px;
                 margin: 0;
                 opacity: 1;
-                border: solid 1px $c-black;
+                
                  display: flex;
                 flex-direction: row;   
                 justify-content: space-around;
@@ -85,7 +85,7 @@
             margin: 0;
             .para--Light{
                 max-width: 300px;
-                margin: 0 0 0 15%;
+                margin: 0 0 30px 13%;
             }
            .containerValeur{
             display: flex;
@@ -108,14 +108,27 @@
             
            }
            .para--high{
-            text-align: center;
-            margin: 0 12%;
+            margin: 30px 13% 30px 13%;
         }
         }
 
     .nav__second{
         justify-content: flex-start;
-        padding-right: 30px;
+        .seconde--el{
+            margin-right: 30px;
+        }
+    }
+
+    .section--Navfin{
+        padding-left: 0;
+        margin-left: 14%;
+        margin-right: 14%;
+        margin-bottom: 30px;
+
+        .epopee{
+            max-width: 300px;
+       
+        }
     }
 
     }

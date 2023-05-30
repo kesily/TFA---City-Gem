@@ -226,6 +226,7 @@ header .menu--open {
 
 .section--VoirPlus *:nth-child(7) {
   grid-column: 2;
+  grid-row: 5;
 }
 
 .section--VoirPlus *:nth-child(8) {
@@ -239,6 +240,9 @@ header .menu--open {
 
 .section--Valeur {
   padding: 0 30px;
+}
+.section--Valeur .para--Light {
+  margin-bottom: 30px;
 }
 
 .section--Navfin {
@@ -258,6 +262,9 @@ footer .containerFooter__menu {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  body header {
+    border: solid 1px #0D0D0D;
+  }
   body header .menu__burger {
     display: none;
   }
@@ -268,7 +275,6 @@ footer .containerFooter__menu {
     top: 0px;
     margin: 0;
     opacity: 1;
-    border: solid 1px #0D0D0D;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -328,7 +334,7 @@ footer .containerFooter__menu {
   }
   body .section--Valeur .para--Light {
     max-width: 300px;
-    margin: 0 0 0 15%;
+    margin: 0 0 30px 13%;
   }
   body .section--Valeur .containerValeur {
     display: flex;
@@ -349,11 +355,21 @@ footer .containerFooter__menu {
     font-size: 8pt;
   }
   body .section--Valeur .para--high {
-    text-align: center;
-    margin: 0 12%;
+    margin: 30px 13% 30px 13%;
   }
   body .nav__second {
     justify-content: flex-start;
-    padding-right: 30px;
+  }
+  body .nav__second .seconde--el {
+    margin-right: 30px;
+  }
+  body .section--Navfin {
+    padding-left: 0;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 30px;
+  }
+  body .section--Navfin .epopee {
+    max-width: 300px;
   }
 }/*# sourceMappingURL=app.css.map */
