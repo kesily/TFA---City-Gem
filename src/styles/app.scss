@@ -27,23 +27,63 @@ z-index: 9;
 }
 
 }
+
 .section--Home {
-    margin-left: 30px;
-    margin-right: 30px;
     margin-bottom: 100px;
 }
-.section--Sujet {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 100px;
+.section {
+    h1{
+        margin-bottom: 0;
+    }
 }
 
+.section--rencontre {
+    margin-left: 30px;
+    margin-right: 30px;
+    h1{
+        font-size: 36pt;
+    }
+}
+.section--fonctional {
+    h1{
+        font-size: 24pt;
+    }
+}
+.section--icon {
+    background-color: $c-blue;
+    border: $c-black 1px solid;
+    margin: 0;
+    .container--fonc{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        padding: 10px;
+        svg{
+            min-width: 40px;
+        }
+        p{
+            margin-left: 30px;
+        }
+    }
+}
 .section--suivant {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 100px;
-}
+    margin-bottom: 30px;
+    .cta{
+        margin-left: 100px;
+    }
+    .next{
+        font-size: 24pt;
+        margin-left: 25px;
 
+    }
+}
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    p{
+        margin-left: 30px;
+    }
+}
 
 
 .section--VoirPlus{
@@ -52,12 +92,15 @@ z-index: 9;
     padding-left: 30px;
     padding-right: 30px;
     column-gap: 10px;
+    h2{
+        margin-top: 100px;
+    }
 }
 
 
-.section--VoirPlus *:nth-child(1){
+.section--VoirPlus :nth-child(1){
     grid-column: 1 / span 6 ;
-    margin-top: 100px;
+ 
 
 }
 .section--VoirPlus *:nth-child(2){
@@ -71,6 +114,8 @@ z-index: 9;
 }
 .section--VoirPlus *:nth-child(5){
     grid-column: 1 / span 6 ;
+    margin: 20px 0;
+    
 }
 .section--VoirPlus *:nth-child(6){
     grid-column: 4/ span 3 ;
@@ -79,7 +124,7 @@ z-index: 9;
 }
 .section--VoirPlus *:nth-child(7){
     grid-column: 2 ;
-    grid-row: 5;
+    grid-row: 6;
 }
 .section--VoirPlus *:nth-child(8){
     grid-column: 1 / span 3 ;
@@ -94,13 +139,19 @@ z-index: 9;
     padding: 0 30px;
     .para--Light{
         margin-bottom: 30px;
+        padding-top: 30px;
     }
 }
 .section--Navfin{
     padding-left: 30px;
-    padding-right: 30px;
     margin-bottom: 30px;
+    margin-right: 30px;
+    .para--Light{
+       
+        margin-top: 30px;
+        }
 }
+
 
 footer{
     margin: 0;
@@ -112,4 +163,7 @@ footer{
     }
 }
 
+
+@import 'media/tablette';
 @import 'media/desktop';
+@import 'media/desktop2';
