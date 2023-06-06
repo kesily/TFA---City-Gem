@@ -160,11 +160,11 @@ padding: 15px 0;
   text-align: center;
   display: flex;
   height: 50px;
-  min-width: 120px;
   justify-content: center;
   align-items: center;
   margin: 0;
   z-index: 0;
+  white-space: pre-wrap;
 }
 .section{
   margin-left: 30px;
@@ -328,5 +328,11 @@ p{
 footer{
   background-color: $c-blue;
   border: $c-black 1px solid;
+}
+
+.footer--fixed{
+  position: fixed;
+  bottom: 0;
+  width: 100%
 }
 }
