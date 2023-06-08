@@ -1,14 +1,68 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "City Gem",
+    "short-name": "City Gem",
+    "description": "FINE THE GEM 💎 IN THE CITY",
+    "dir": "ltr",
+  
+    "lang": "fr",
+  
     "icons": [
-        {
-            "src": "/android-chrome-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        }
+      {
+        "src": "./assets/images/fav-icon/android-chrome-96x96.png",
+        "sizes": "96x96",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./assets/images/fav-icon/apple-touch-icon.png",
+        "sizes": "120x120",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./assets/images/fav-icon/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./assets/images/fav-icon/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./assets/images/fav-icon/favicon.ico",
+        "sizes": "32x32",
+        "type": "image/ico",
+        "purpose": "any"
+      },
+      {
+        "src": "./assets/images/fav-icon/mstile-150x150.png",
+        "sizes": "150x150",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./assets/images/fav-icon/safari-pinned-tab.svg",
+        "sizes": "160x160",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "./assets/images/fav-icon/safari-pinned-tab.svg",
+        "sizes": "160x160",
+        "type": "image/png",
+        "purpose": "any"
+      }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
-}
+  
+    "display": "standalone",
+    "scope": "https://kesily-outtara.be/",
+    "orientation": "natural",
+    "background_color": "#B3C8FD",
+    "theme_color": "#B3C8FD",
+    "start_url": "https://kesily-outtara.be",
+    "categories": ["Tourism", "Travel", "Information", "NPO"]
+  }
+  

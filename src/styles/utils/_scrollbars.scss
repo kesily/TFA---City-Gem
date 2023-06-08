@@ -1,0 +1,20 @@
+/* Firefox */
+* {
+  scrollbar-width: 0px;
+  scrollbar-color: transparent transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  display: none;
+}

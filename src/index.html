@@ -1,122 +1,381 @@
 <!DOCTYPE html>
 <html lang="fr-BE">
-<head>
-  <title>Ci</title>
-  
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav-icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav-icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav-icon/favicon-16x16.png">
-  <link rel="manifest" href="assets/images/fav-icon/site.webmanifest">
-  <link rel="mask-icon" href="assets/images/fav-icon/safari-pinned-tab.svg" color="#fa8181">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>City Gem - Find the 💎 in the city</title>
 
-  <link rel="stylesheet" href="styles/app.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav-icon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/fav-icon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/fav-icon/safari-pinned-tab.svg" color="#fa8181">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="scripts/app.js" defer></script>
-</head>
-<body>
-  <header>
-    <button class="menu__burger">menu</button>
+    <link rel="stylesheet" href="styles/app.css">
+
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button class="menu__burger">menu</button>
       <ul class="menu__list">
-       <li class="menu__el">
-          <a class="next" href="index.html">home</a>
+        <li class="menu__el">
+          <a class="next" href="#home">home</a>
         </li>
         <li class="menu__el">
-          <a href="sujet.html">sujet</a>
+          <a href="#sujet">sujet</a>
         </li>
         <li class="menu__el">
-          <a href="rencontres.html">rencontres</a>
+          <a href="#rencontres">rencontres</a>
         </li>
         <li class="menu__el">
-          <a href="interet.html">interet</a>
+          <a href="#interets">interet</a>
         </li>
         <li class="menu__el">
-          <a href="fonctional.html">fonctionalitées</a>
+          <a href="#fonctionalitees">fonctionalitées</a>
         </li>
         <li class="menu__el">
-          <a href="defis.html">défis</a>
+          <a href="#defis">défis</a>
         </li>
       </ul>
-  </header>    
-  <main>
-      <section class="section section--Home">
+    </header>
+    <main class="main">
+      <!-- #regionstart Home Page -->
+      <section aria-label="Section page principale" class="section__pageContainer" id="home">
+        <section class="section section--Home">
           <h1>City Gem</h1>
-          <p class="sous-titre">fine the <span class="bold">gem</span> 💎 in the <span class="bold">city</span></p>
-          <p class="para--Light">En collaboration avec les cartes Use-it, nous vous présenterons le projet qui permettra aux jeunes voyageurs de visiter la ville comme des locaux. Vous aurez l'occasion de visiter l'ensemble des villes existantes déjà sous forme de cartes papier à commencer par Bruxelles. </p>
-          <p class="para--medium">Pour tout les utilisateurs qui préfèrent le format digital, tout sera désormais à portée de smartphone !</p>
-      </section>
-      
-      <section class="section--VoirPlus">
-          <h2>🤷‍♂️ qui est use-it ?</h2>
-          <p class="citation">“Nous créons des cartes pour les jeunes voyageurs : faites par des locaux, actualisées, non commerciales et gratuites. Pas d'absurdité ni de publicité, juste la vraie vie de la ville.”</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none"><path fill="#000" d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z"/></svg>
-          <div class="gris"><p><a class="lien text--bold" href="">Nicolas</a>, commité de direction de use-it</p></div>
-          <p class="para--Light">Ils conçoivent des cartes papiers décorées par des artistes locaux, avec des points d'intérêts identifiés par des jeunes habitants. voyageurs en quête de nouveaux endroits à visiter.</p>
-          <img  src="assets/images/cartes.png" alt="carte use-it de la ville de ghent en belgique">
-          <svg class="fleche" xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none"><path fill="#000" d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z"/></svg>
-          <div class="gris"><p>carte use-it ville <br>de<a class="lien text--bold" href="https://www.use-it.travel/_files/fileupload/cities/plans/2021_ghent.pdf">ghent</a></p></div>
-          <a class="next" href="https://www.use-it.travel/home">voir toutes les cartes</a>
-      </section>
+          <p class="sous-titre">find the <span class="bold">gem</span> 💎 in the <span class="bold">city</span></p>
+          <p class="para--Light">En collaboration avec les cartes Use-it, nous vous présenterons le projet qui permettra
+            aux jeunes voyageurs de visiter la ville comme des locaux. Vous aurez l'occasion de visiter l'ensemble des
+            villes existantes déjà sous forme de cartes papier à commencer par Bruxelles. </p>
+          <p class="para--medium">Pour tout les utilisateurs qui préfèrent le format digital, tout sera désormais à
+            portée de smartphone !</p>
+        </section>
 
-      <section class="section--Valeur">
-          <p class="para--Light">Use-it a <span class="text--bold">8 valeurs</span> qui se corrèlent parfaitement avec celles que je cherchais à montrer dans mon projet et plus encore.</p>
-         
-         <div class="containerValeur">
-          <div class="valeurs">
+        <section class="section--VoirPlus">
+          <h2>🤷‍♂️ qui est use-it ?</h2>
+          <p class="citation">“Nous créons des cartes pour les jeunes voyageurs : faites par des locaux, actualisées,
+            non commerciales et gratuites. Pas d'absurdité ni de publicité, juste la vraie vie de la ville.”</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <div class="gris">
+            <p><a class="lien text--bold" href="https://www.instagram.com/useitmaps/">Nicolas</a>, commité de direction de use-it</p>
+          </div>
+          <p class="para--Light">Ils conçoivent des cartes papiers décorées par des artistes locaux, avec des points
+            d'intérêts identifiés par des jeunes habitants. voyageurs en quête de nouveaux endroits à visiter.</p>
+          <img src="assets/images/cartes.png" alt="carte use-it de la ville de ghent en belgique">
+          <svg class="fleche" xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <div class="gris">
+            <p>carte use-it ville <br>de<a class="lien text--bold"
+                href="https://www.use-it.travel/_files/fileupload/cities/plans/2021_ghent.pdf">ghent</a></p>
+          </div>
+          <a class="next" href="https://www.use-it.travel/home">voir toutes les cartes</a>
+        </section>
+
+        <section class="section--Valeur" aria-label="Valeurs de l'app">
+          <p class="para--Light">Use-it a <span class="text--bold">6 valeurs</span> qui se corrèlent parfaitement avec
+            celles que je cherchais à montrer dans mon projet et plus encore.</p>
+
+          <div class="containerValeur">
+            <div class="valeurs">
               <p class="valTitre">made by locals</p>
               <p class="text--bold">we don't work with travel journalists but with locals.</p>
-          </div>
-          <div class="valeurs">
+            </div>
+            <div class="valeurs">
               <p class="valTitre">mape are free</p>
               <p class="text--bold">you find them in hostels and tourist infos.</p>
-          </div>
-          <div class="valeurs">
+            </div>
+            <div class="valeurs">
               <p class="valTitre">young travelers</p>
               <p class="text--bold">no 5-star hotels, no fancy dinners.</p>
-          </div>
-          <div class="valeurs">
+            </div>
+            <div class="valeurs">
               <p class="valTitre">not commercial</p>
               <p class="text--bold">nobody pays to be inclded on the maps.</p>
-          </div>
-          <div class="valeurs">
+            </div>
+            <div class="valeurs">
               <p class="valTitre">not a trendy guide</p>
               <p class="text--bold">it's about the life and soul of the city.</p>
-          </div>
-          <div class="valeurs">
+            </div>
+            <div class="valeurs">
               <p class="valTitre">up-to-date</p>
               <p class="text--bold">new editions are made every year.</p>
-          </div></div>
+            </div>
+          </div>
 
-      <p class="para--light para--high"><span class="text--bold">Use-it</span> c’est un super moyen de trouver de nouvelles choses à faire dans une ville, de trouver des endroits moins connus du grand public mais qui n’en n’a pas moins pleine <span class="text--bold">d’histoire à raconter.</span></p>
-      </section>
+          <p class="para--light para--high"><span class="text--bold">Use-it</span> c’est un super moyen de trouver de
+            nouvelles choses à faire dans une ville, de trouver des endroits moins connus du grand public mais qui n’en
+            n’a pas moins pleine <span class="text--bold">d’histoire à raconter.</span></p>
+        </section>
 
-      <section class="section--Navfin">
-          <p class="para--Light">Pour donner vie à ce projet de plusieurs mois, il s’est passé beaucoup de choses, il y a eu des rencontres, de bons et de mauvais choix, des doutes et des succès.</p>
-          <H2 class="epopee">retraçons ensemble toute l’épopée.</H2>
+        <section class="section--Navfin">
+          <p class="para--Light">Pour donner vie à ce projet de plusieurs mois, il s’est passé beaucoup de choses, il y
+            a eu des rencontres, de bons et de mauvais choix, des doutes et des succès.</p>
+          <h2 class="epopee">retraçons ensemble toute l’épopée.</h2>
           <p>ça se passe <span class="text--bold">ici !</span></p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none"><path fill="#000" d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z"/></svg>
-          <a class="next" href="sujet.html">sujet</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <a class="next" href="#sujet" data-nav="1">sujet</a>
           <h2 class="text--bold text--center para--high">Rendez-vous en 2024 pour le lancement de City Gem !</h2>
           <p>à voir <span class="text--bold">aussi</span></p>
-         <ul class="nav__second">
-         <li class="seconde--el"> <a  href="ui-kit.html">ui-kit</a></li>
-         <li class="seconde--el"><a href="https://docs.google.com/document/d/1ExF9j8q8ITRXWrFVu-lrYjmEqlDSK6nH87Bomwcq0no/edit?usp=sharing">Le doc</a></li>
-         <li class="seconde--el"><a href="">vidéo</a></li>
-         <li class="seconde--el"> <a href="credits.html">crédits</a></li>
-        </ul>
+          <ul class="nav__second">
+            <li class="seconde--el"> <a href="ui-kit.html">ui-kit</a></li>
+            <li class="seconde--el"><a
+                href="https://docs.google.com/document/d/1ExF9j8q8ITRXWrFVu-lrYjmEqlDSK6nH87Bomwcq0no/edit?usp=sharing">Le
+                doc</a></li>
+            <li class="seconde--el"><a href="">vidéo</a></li>
+            <li class="seconde--el"> <a href="credits.html">crédits</a></li>
+          </ul>
+        </section>
       </section>
-  </main>
-  <footer>
+      <!-- #regionend -->
+      <!-- #regionstart Sujet Page -->
+      <section aria-label="Section page sujet" class="section__pageContainer" id="sujet">
+        <section class="section section--Sujet section--padding">
+          <h2 class="h2">Sujet</h2>
+          <h3>🌃 De ville en ville.</h3>
+          <p class="para--Light">Étant très attachée à ma ville, un projet qui peut m'aider à <span class="text--bold">
+              la
+              promouvoir </span> et aider ceux qui aime leurs villes à pouvoir <span class="text--bold">la
+              partager</span>
+            aussi, c’est un sujet sur lequel j’étais sûr que j’allais pouvoir m’amuser.</p>
+          <p class="para--medium">J’ai grandi toute ma vie à Bruxelles et lorsque j’entends quelqu’un me dire qu’il
+            n’aime
+            pas cette ville, je lui réponds que c’est parce qu' il ne la connaît pas comme moi je la connais.</p>
+          <p class="para--Light">Une ville c’est des endroits touristiques parfois très fréquenté  mais c’est aussi des
+            endroits plus discrets dans lesquels on se sent tout aussi bien. Et ça, quand je voyage, c’est aussi ce que
+            je
+            recherche. j’ai eu l'occasion de visiter des dizaines de villes à travers l'Europe et le monde.</p>
+          <P class="para--light para--high">Ce sont pour toutes ces raisons que je me suis poussé à travailler sur ce
+            sujet là.</P>
+        </section>
+
+        <div class="section section--suivant section--padding">
+          <p>la suite c'est <span class="text--bold">ici !</span></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <a class="next" href="#rencontres" data-nav="2">rencontres</a>
+        </div>
+      </section>
+      <!-- #regionend -->
+      <!-- #regionstart Rencontres Page -->
+      <section aria-label="Section page rencontres" class="section__pageContainer" id="rencontres">
+        <section class=" section section--rencontre section--padding">
+          <h2 class="h2">rencontres</h2>
+          <h3>🤝 beaucoup de belles rencontres.</h3>
+          <p class="para--Light">Des rencontres avec l’équipe de use-it d’abord. Des rencontres avec
+            des utilisateurs surtout.</p>
+
+          <p class="para--medium">Je suis donc aller à la rencontre de personnes qui aiment voyager et découvrir pour
+            savoir comment améliorer leurs expérience, ce qui allait ou n’allait pas dans leurs voyages.
+            j'ai rédigé un guide d'entretien. j’ai voulu ce guide très large car je n’avais à ce stade là aucune idée
+            de
+            la solution finale que j’aurais pu proposer. donc j’ai finalement rencontré pas mal d’amoureux du voyage,
+            des
+            gens qui aiment leur ville. on à pu discuter de ce qu’ils aiment ou n’aime pas dans leurs ville, dans les
+            villes qu’ils visitent.</p>
+          <p>Je me suis entretenu avec Nicolas qui fait partie du comité de direction de Use-it. et ils avaient aussi
+            identifié ce problème. De leurs côtés, ils travaillaient sur une solution à peu près similaire qu’ils ont
+            appelée Dig-it. En discutant ils se sont montrés intéressés par la vision que j’avais du projet et nous
+            avons
+            convenu qu'une collaboration était envisageable.</p>
+          <p class=" para--high"> Nous pensons tous les deux que ce pourrait être très chouette de travailler ensemble
+          </p>
+        </section>
+
+        <div class="section section--suivant section--padding">
+          <p>la suite c'est <span class="text--bold">ici !</span></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <a class="next" href="#interets" data-nav="3">interet</a>
+        </div>
+      </section>
+      <!-- #regionend -->
+      <!-- #regionstart Interets Page -->
+      <section aria-label="Section page intérets" class="section__pageContainer" id="interets">
+        <section class="section section--interet section--padding">
+          <h2 class="h2">interet</h2>
+          <h3>👍 un réel interet.</h3>
+          <p class="para--Light">Aujourd’hui le média utilisé par use-it ne parle plus vraiment à ses utilisateurs. En
+            effet ils cherchent à s’adresser à un public jeune sauf que celui-ci ne s'intéresse plus assez aux cartes
+            papier. </p>
+          <img class="cover" src="./assets/images/Les-cartes.png" alt="couvertures de trois cartes use-it, décorées.">
+          <div class="flexcontainer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+              <path fill="#000"
+                d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+            </svg>
+            <div class="gris">
+              <p>couvertures des cartes<a class="lien text--bold lien" href="">use-it</a></p>
+            </div>
+          </div>
+
+          <p class="para--medium">J'ai sondé de nombreux jeunes qui me disaient ne pas connaître les cartes use-it. En
+            2023 plus que jamais, les cartes papiers posent un souci d’écologie, l’impression en masse, les diffusions
+            depuis l’imprimerie dans de nombreuses villes européennes se fait en camion. Le but n’étant pas de supprimer
+            entièrement les cartes mais d’en diminuer la production pour réduire l'impact que celles-ci ont sur la
+            planète. La diffusion de cartes papiers ne pouvant se faire que via des points de ventes, elle ne permet pas
+            à
+            tous de pouvoir en profiter. Tout ça je l’ai appris en discutant avec les jeunes voyageurs et Nicolas de
+            chez
+            use-it</p>
+          <p class="para--Light">Après toutes ces discussions, j’ai compris que tout comme moi les gens aimait partager,
+            faire découvrir, épater. Les voyageurs aiment autant visiter les endroits les plus prisés de la ville que de
+            souffler au calme à une terrasse. </p>
+          <p class="para--Light">C’est vraiment en <span class="text--bold"> échangeant </span> avec les gens et avec
+            Use-it avec qui j’ai eu la chance de m’entretenir un peu plus d’une heure, que j’ai pu facilement identifier
+            les problématiques et commencer à chercher comment les résoudre .</p>
+        </section>
+
+        <div class="section section--suivant section--padding">
+          <p>la suite c'est <span class="text--bold">ici !</span></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <a class="next" href="#fonctionalitees" data-nav="4">fonctionalitées</a>
+        </div>
+
+      </section>
+      <!-- #regionend -->
+      <!-- #regionstart Fonctionalitees Page -->
+      <section aria-label="Section page fonctionalitées" class="section__pageContainer" id="fonctionalitees">
+        <section class="section section--fonctional section--padding">
+          <h2 class="h2">fonctionalitées</h2>
+          <h3>🤳 ça fonctionne !</h3>
+          <p>La solution c’est de créer de nouvelles cartes use-it sur internet qui soit plus interactive et qui
+            parlerait
+            aux jeunes à qui le format papier ne parle plus réellement. garder les valeurs des cartes d’origines et les
+            rendre plus accessibles à un maximum de gens.</p>
+
+
+          <div class="section--icon">
+            <div class="container--fonc">
+              <svg width="36" height="39" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.8949 20.9184C27.6101 18.8408 29.3684 15.5771 29.3684 11.8947C29.3684 5.61652 24.2782 0.526306 18 0.526306C11.7218 0.526306 6.63158 5.61652 6.63158 11.8947C6.63158 15.5771 8.3899 18.8408 11.1051 20.9184C4.58526 23.7662 0 30.5247 0 38.421H36C36 30.5247 31.4147 23.7662 24.8949 20.9184ZM10.4211 11.8947C10.4211 7.71589 13.8212 4.31578 18 4.31578C22.1788 4.31578 25.5789 7.71589 25.5789 11.8947C25.5789 16.0736 22.1788 19.4737 18 19.4737C13.8212 19.4737 10.4211 16.0736 10.4211 11.8947ZM18 23.2631C24.6098 23.2631 30.1794 28.1014 31.7605 34.6316H4.23947C5.82063 28.1014 11.3902 23.2631 18 23.2631Z"
+                  fill="black" />
+              </svg>
+              <p class="para--Light">Créer <span class="text--bold">un profil</span> ou vous connecter si vous en avez
+                déjà un.</p>
+            </div>
+
+            <div class="container--fonc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="41" height="35" fill="none">
+                <path fill="#0D0D0D" fill-rule="evenodd"
+                  d="M39.295.334A2 2 0 0 1 40.188 2v25.393a2 2 0 0 1-1.224 1.843l-12.062 5.079a2 2 0 0 1-1.552 0l-11.287-4.752-11.287 4.752A2 2 0 0 1 0 32.472V7.079a2 2 0 0 1 1.224-1.844L13.287.157a2 2 0 0 1 1.552 0l11.287 4.752L37.412.157a2 2 0 0 1 1.883.177Zm-15.17 8.073-8.062-3.395v21.053l8.063 3.395V8.407Zm4 21.053 8.063-3.395V5.012l-8.062 3.395V29.46Zm-16.062-3.395V5.012L4 8.407V29.46l8.063-3.395Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p class="para--Light">Sélectionner une carte parmi celles disponibles, qui vous permettra de naviguer
+                vers
+                les endroits indiqués<span class="text--bold"> par les locaux.</span> Chaque lieu sera accompagné d'une
+                description, d'une petite photo et toutes infos importantes.</p>
+            </div>
+            <div class="container--fonc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="37" fill="none">
+                <path fill="#0D0D0D"
+                  d="M15.5 36.615a1.352 1.352 0 0 1-.803-.255C14.11 35.988.323 26.725.323 15.465a15.177 15.177 0 1 1 30.354 0c0 11.26-13.708 20.523-14.374 20.895a1.352 1.352 0 0 1-.803.255Zm0-33.292A12.2 12.2 0 0 0 3.26 15.465c0 8.244 9.38 15.784 12.24 17.88 2.86-2.096 12.24-9.636 12.24-17.88A12.2 12.2 0 0 0 15.5 3.323Z" />
+                <path fill="#0D0D0D"
+                  d="M15.5 19.969a5.385 5.385 0 1 1 0-10.77 5.385 5.385 0 0 1 0 10.77Zm0-7.834a2.448 2.448 0 1 0 0 4.897 2.448 2.448 0 0 0 0-4.897Z" />
+              </svg>
+              <p class="para--Light">Ajouter des lieux à votre liste de<span class="text--bold"> visites futures.</span>
+              </p>
+            </div>
+            <div class="container--fonc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="19" fill="none">
+                <path stroke="#0D0D0D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 3.807h5.556c3.682 0 6.666 2.513 6.666 5.613v8.42M1 3.808 4.333 1M1 3.807l3.333 2.807M25.444 3.807H19.89c-3.682 0-6.667 2.513-6.667 5.613v8.42M25.444 3.808 22.111 1m3.333 2.807-3.333 2.807" />
+              </svg>
+              <p class="para--Light">Être redirigé vers une application de <span class="text--bold"> guidage</span>
+                telle
+                que Waze ou Google Maps pour vous rendre sur le lieu choisi</p>
+            </div>
+            <div class="container--fonc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" fill="none">
+                <path stroke="#020202" stroke-miterlimit="10" stroke-width="1.91"
+                  d="M.967 5.715v11.858a4.748 4.748 0 0 0 4.748 4.749H8.09v3.555l7.172-3.555h7.123a4.749 4.749 0 0 0 4.748-4.749V5.715A4.749 4.749 0 0 0 22.384.967H5.715A4.748 4.748 0 0 0 .967 5.715ZM18.767 11.644h2.374M12.838 11.644H15.2M6.896 11.644H9.27" />
+              </svg>
+              <p class="para--Light">Laisser <span class="text--bold">des commentaires</span> sur les lieux visités, en
+                plus des descriptions, pour obtenir les avis des autres utilisateurs.</p>
+            </div>
+            <div class="container--fonc">
+              <svg width="36" height="39" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.8949 20.9184C27.6101 18.8408 29.3684 15.5771 29.3684 11.8947C29.3684 5.61652 24.2782 0.526306 18 0.526306C11.7218 0.526306 6.63158 5.61652 6.63158 11.8947C6.63158 15.5771 8.3899 18.8408 11.1051 20.9184C4.58526 23.7662 0 30.5247 0 38.421H36C36 30.5247 31.4147 23.7662 24.8949 20.9184ZM10.4211 11.8947C10.4211 7.71589 13.8212 4.31578 18 4.31578C22.1788 4.31578 25.5789 7.71589 25.5789 11.8947C25.5789 16.0736 22.1788 19.4737 18 19.4737C13.8212 19.4737 10.4211 16.0736 10.4211 11.8947ZM18 23.2631C24.6098 23.2631 30.1794 28.1014 31.7605 34.6316H4.23947C5.82063 28.1014 11.3902 23.2631 18 23.2631Z"
+                  fill="black" />
+              </svg>
+              <p class="para--Light">Permettre aux locaux de soumettre de<span class="text--bold"> nouvelles
+                  cartes,</span> afin d'élargir la diversité des destinations proposées.</p>
+            </div>
+          </div>
+
+          <p>les personnes souhaitant créer leur carte avaient la mainmise totale sur la création. Sauf que dans le cas
+            de
+            cartes digitales, on ne va pas demander aux utilisateurs de coder eux même leurs cartes. C'est pour celà que
+            selon moi cette fonctionnalité devrait venir plus tard dans une v2.</p>
+        </section>
+        <div class="section section--suivant section--padding">
+          <p>la suite c'est <span class="text--bold">ici !</span></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <a class="next" href="#defis" data-nav="5">defis</a>
+        </div>
+      </section>
+      <!-- #regionend -->
+      <!-- #regionstart Defis Page -->
+      <section aria-label="Section page défis" class="section__pageContainer" id="defis">
+        <section class="section section--defi section--padding">
+          <h2 class="h2">defis</h2>
+          <h3>💪 un défi colossal.</h3>
+          <p class="para--Light">Malgré tous ces défis, j’ai hâte de me lancer dans la réalisation de ce projet. je suis
+            sur qu’il sera pour moi un grand pas en avant pour ma carrière, que ce soit en travaillant avec use-it, en
+            découvrant de nouvelles techniques ou en travaillant au plus proches des utilisateurs.</p>
+          <p class="para--medium">il y a pas mal d'interrogations qu’il me reste à ce stade-ci. des interrogations
+            techniques comme par exemple quant aux map vectoriel que je devrai intégrer. Dans City Gem, je ne peux pas
+            me
+            permettre de reprendre une carte neutre comme celle de google ou waze. il faut une carte décorer, une carte
+            personnalisée par un artiste locale, une carte aussi intéractive. </p>
+          <p class="para--high">Les locaux seront l'intérêt principal de l’application et c’est une chose qu’il faudra
+            garder en tête durant toute la conception de l’application.</p>
+
+        </section>
+
+        <div class=" section section--suivant section--padding">
+          <p>c'est finit, tu peux relire <span class="text--bold">ici !</span></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
+            <path fill="#000"
+              d="M32.17 32.801a.5.5 0 0 1 .056.705l-2.925 3.42a.5.5 0 1 1-.76-.65l2.6-3.04-3.04-2.6a.5.5 0 1 1 .65-.76l3.42 2.925ZM2.19 1.111C.197 9.822 1.082 16.1 3.46 20.632c2.381 4.535 6.294 7.392 10.494 9.187 4.202 1.795 8.665 2.514 12.09 2.781 1.71.134 3.154.155 4.17.142a33.744 33.744 0 0 0 1.569-.056l.019-.002a.05.05 0 0 1 .004 0l.04.498.038.499h-.008l-.023.002-.085.006-.325.018c-.283.013-.696.028-1.216.035a47.635 47.635 0 0 1-4.261-.145c-3.485-.272-8.066-1.005-12.405-2.859-4.343-1.855-8.468-4.845-10.986-9.641C.057 16.298-.815 9.762 1.215.888l.975.224Z" />
+          </svg>
+          <a class="next" href="#home" data-nav="0">home</a>
+        </div>
+      </section>
+      <!-- #regionend -->
+
+    </main>
+    <footer>
       <ul class="containerFooter__menu">
         <li class="reseaux"><a href="https://www.instagram.com/kesily_dwt/">Instagram</a></li>
         <li class="reseaux"><a href="https://twitter.com/KesilyHW"> Twitter </a></li>
         <li class="reseaux"><a href="https://dwt.heaj.be/">kesily - dwt</a></li>
       </ul>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
